@@ -4,12 +4,52 @@
   <title>WEB1 - html</title>
   <meta charset="utf-8">
   <style>
-    h1, a {
+   a {
       text-decoration-line: none;
       text-decoration-color: black;
     }
 
+    h1 {
+       font-size: 45px;
+       text-align: center;
+       border-bottom:1px solid gray;
+       margin: 0px;
+       padding: 20px;
+    }
+
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      border-right
+    }
+
+    #grid ol{
+      padding-left:33px;
+      border-right:1px solid gray;
+      width: 100px;
+      margin: 0;
+      padding-top: 24px;
+    }
+
+    #grid #article{
+      padding-left: 20px;
+    }
+
+    @media(max-width: 800px){
+      #grid{
+        display: block;
+      }
+      h1{
+        border-bottom: none;
+      }
+
+      #grid ol{
+        border-right: none;
+      }
+    }
+
   </style>
+
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
@@ -28,5 +68,43 @@
     </p>
   </div>
   </div>
+
+  <div id="disqus_thread"></div>
+ <script>
+
+ /** 댓글달기기능
+ *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+ *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+ /*
+ var disqus_config = function () {
+ this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+ };
+ */
+ (function() { // DON'T EDIT BELOW THIS LINE
+ var d = document, s = d.createElement('script');
+ s.src = 'https://web1-4otywbf16r.disqus.com/embed.js';
+ s.setAttribute('data-timestamp', +new Date());
+ (d.head || d.body).appendChild(s);
+ })();
+ </script>
+ <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5b25cec161a2e64e5fb5893e/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+
 </body>
 </html>

@@ -2,15 +2,60 @@
 <title>WEB1-JavaScript</title>
 <head>
   <h1><a href="index.html"> WEB </a></h1>
+  <style>
+  a {
+     text-decoration-line: none;
+     text-decoration-color: black;
+   }
+
+   h1 {
+      font-size: 45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin: 0px;
+      padding: 20px;
+   }
+
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+
+    #grid ol{
+      padding-left:33px;
+      border-right:1px solid gray;
+      width: 100px;
+      margin: 0;
+      padding-top: 24px;
+    }
+
+    #grid #article{
+      padding-left: 20px;
+    }
+
+    @media(max-width:800px){
+      h1{
+        border-bottom: none;
+      }
+      #grid{
+        display: block;
+      }
+      #grid ol{
+        border-right: none;
+      }
+    }
+  </style>
 </head>
 <body>
-<ol>
-  <li><a href="1.html">HTML</a></li>
-  <li><a href="2.html">CSS</a></li>
-  <li><a href="3.html">JavaScript</a></li>
-</ol>
+<div id="grid">
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+  <div id="article">
 <h2>JavaScript</h2>
-</body>
+
 <p><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" title="wikipeida">JavaScript</a> often abbreviated as JS, is a high-level, interpreted programming language. It is a language which is also characterized as <strong>dynamic, weakly typed, prototype-based and multi-paradigm</strong>.</p>
 
 <br><center><img src="team.jpg" alt="team" width="800" height="500"></center>
@@ -19,3 +64,45 @@
 </p><p>
 As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles. It has an API for working with text, arrays, dates, regular expressions, and basic manipulation of the DOM, but the language itself does not include any I/O, such as networking, storage, or graphics facilities, relying for these upon the host environment in which it is embedded.
 </p>
+</div>
+</div>
+
+<div id="disqus_thread"></div>
+<script>
+
+/** 댓글달기기능
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://web1-4otywbf16r.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5b25cec161a2e64e5fb5893e/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+</body>
+</html>
